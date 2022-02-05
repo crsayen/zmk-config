@@ -13,7 +13,7 @@
 #define NBRC 2
 #define NAVW 3
 #define NAVM 4
-#define FN 5
+#define FU 5
 
 / {
         keymap {
@@ -21,10 +21,10 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T          &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &mo NAVW  &kp A &kp S &kp D &kp F &kp G          &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B          &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                   &kp LALT &kp LGUI &lt NBRC SPACE &kp RET &mo FN &kp LCTRL
+   &kp TAB    &kp Q  &kp W     &kp E     &kp R     &kp T             &kp Y    &kp U   &kp I      &kp O    &kp P     &kp BSPC
+   &mo NAVW   &kp A  &kp S     &kp D     &kp F     &kp G             &kp H    &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+   &kp LSHFT  &kp Z  &kp X     &kp C     &kp V     &kp B             &kp N    &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                               &kp LALT  &kp LGUI  &lt NBRC SPACE    &kp RET  &mo FU  &kp LCTRL
                         >;
                 };
                 winmask_layer {
@@ -38,37 +38,37 @@
 
                 numbrack_layer {
                         bindings = <
-   &trans &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT         &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &trans &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5      &kp MINUS &kp EQUAL &kp BSLH        &kp LBKT &kp RBKT &kp GRAVE
-   &trans &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0      &kp UNDER &kp PLUS  &kp PIPE        &kp LBRC &kp RBRC &kp TILDE
-                    	               &kp LGUI     &trans       &kp SPACE         &kp RET   &trans    &kp RALT
+   &trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+   &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp MINUS  &kp EQUAL  &kp BSLH         &kp LBKT  &kp RBKT  &kp GRAVE
+   &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0      &kp UNDER  &kp PLUS   &kp PIPE         &kp LBRC  &kp RBRC  &kp TILDE
+                    	                  &kp LGUI      &trans        &kp SPACE         &kp RET    &trans     &kp RALT
                         >;
                 };
 
                 nav_win_layer {
                         bindings = <
-   &trans &kp C_PP      &kp C_PREV   &kp C_NEXT           &kp CAPS             &kp C_AC_REFRESH       &kp PG_UP    &kp LG(LEFT) &kp UP   &kp LG(RIGHT) &kp PG_DN     &trans
-   &trans &kp C_VOL_DN  &kp C_VOL_UP &kp LG(LS(NUMBER_4)) &kp LG(LS(NUMBER_5)) &trans                 &kp LA(LEFT) &kp LEFT     &kp DOWN &kp RIGHT     &kp LA(RIGHT) &kp DEL
-   &trans &trans        &trans       &trans               &trans               &tog WMSK              &trans    &kp LC(MINUS)   &trans   &kp LC(PLUS)  &trans        &trans
-                    	                &trans               &trans               &trans                 &trans    &none           &trans
+   &trans &kp C_PP      &kp C_PREV    &kp C_NEXT            &kp CAPS              &kp C_AC_REFRESH       &kp PG_UP    &kp LG(LEFT)   &kp UP    &kp LG(RIGHT)  &kp PG_DN      &trans
+   &trans &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(NUMBER_4))  &kp LG(LS(NUMBER_5))  &trans                 &kp LA(LEFT) &kp LEFT       &kp DOWN  &kp RIGHT      &kp LA(RIGHT)  &kp DEL
+   &trans &trans        &trans        &trans                &trans                &tog WMSK              &trans       &kp LC(MINUS)  &trans    &kp LC(PLUS)   &trans         &trans
+                    	                 &trans                &trans                &trans                 &trans       &none          &trans
                         >;
                 };
 
                                 nav_mac_layer {
                         bindings = <
-   &trans &kp C_PP      &kp C_PREV   &kp C_NEXT &kp CAPS &kp C_AC_REFRESH       &kp PG_UP    &kp HOME   &kp UP   &kp END      &kp PG_DN     &trans
-   &trans &kp C_VOL_DN  &kp C_VOL_UP &trans     &trans   &trans                 &kp LG(LEFT) &kp LEFT   &kp DOWN &kp RIGHT    &kp LG(RIGHT) &kp DEL
-   &trans &trans        &trans       &trans     &trans   &tog WMSK              &trans    &kp LC(MINUS) &trans   &kp LC(PLUS) &trans        &trans
-                    	                &trans     &trans   &trans                 &trans    &none         &trans
+   &trans &kp C_PP      &kp C_PREV    &kp C_NEXT  &kp CAPS  &kp C_AC_REFRESH       &kp PG_UP     &kp HOME       &kp UP    &kp END       &kp PG_DN      &trans
+   &trans &kp C_VOL_DN  &kp C_VOL_UP  &trans      &trans    &trans                 &kp LG(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT     &kp LG(RIGHT)  &kp DEL
+   &trans &trans        &trans        &trans      &trans    &tog WMSK              &trans        &kp LC(MINUS)  &trans    &kp LC(PLUS)  &trans         &trans
+                    	                 &trans      &trans    &trans                 &trans        &none          &trans
                         >;
                 };
 
                                 function_layer {
                         bindings = <
-   &trans  &trans &trans &trans  &trans   &trans              &trans &trans   &kp UP   &trans    &trans &trans
-   &kp F12 &kp F1 &kp F2 &kp F3  &kp F4   &kp F5              &trans &kp LEFT &kp DOWN &kp RIGHT &trans  &trans
-   &kp F11 &kp F6 &kp F7 &kp F8  &kp F9   &kp F0              &trans &trans   &trans   &trans    &trans  &trans
-                    	    &kp F11 &kp RGUI &kp LG(SPACE)       &trans &trans   &trans
+   &trans   &trans  &trans  &trans   &trans    &trans              &trans  &trans    &kp UP    &trans     &trans  &trans
+   &kp F12  &kp F1  &kp F2  &kp F3   &kp F4    &kp F5              &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+   &kp F11  &kp F6  &kp F7  &kp F8   &kp F9    &kp F0              &trans  &trans    &trans    &trans     &trans  &trans
+                    	       &kp F11  &kp RGUI  &kp LG(SPACE)       &trans  &trans    &trans
                         >;
                 };
         };
