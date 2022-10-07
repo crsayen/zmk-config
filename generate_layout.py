@@ -147,7 +147,7 @@ def get_layout():
 
 {define_block}
 
-{{
+/ {{
     keymap {{
         compatible = "zmk,keymap";
         {output}
