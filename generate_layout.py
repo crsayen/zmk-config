@@ -177,7 +177,7 @@ def get_layout():
 }};
     """
 
-layout = get_layout()
-
+print("generating layout...")
 with open("./config/corne.keymap", "w") as f:
-    f.write(layout)
+    f.write(get_layout())
+print("finished!")
