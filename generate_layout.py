@@ -21,14 +21,17 @@ EP_OFF = "&ext_power EP_OFF"
 LGLS4 = "&kp LG(LS(NUMBER_4))"
 LGLS5 = "&kp LG(LS(NUMBER_5))"
 FN_SPACE = "&lt NBC SPACE"
-ALT_LCUP = f"&mt LALT LC(UP)"
-FN_TAB = f"&lt DSK TAB"
+ALT_LCUP = "&mt LALT LC(UP)"
+FN_TAB = "&lt DSK TAB"
 REFRESH = "&kp C_AC_REFRESH"
 MULTIPLY = "&kp KP_MULTIPLY"
 
 
-def num(n):  return f"&kp NUMBER_{n}"
+def num(n): return f"&kp NUMBER_{n}"
+
+
 def ctl_n(num): return f"&kp LC(NUMBER_{num})"
+
 
 layers = {
     "default_layer": {
@@ -50,7 +53,7 @@ layers = {
         "pound_define": "DSK",
         "bindings": f"""
     ┏━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓┏━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
-    ┃            ┃ {ctl_n(1)} ┃ {ctl_n(2)} ┃ {ctl_n(3)} ┃            ┃            ┃┃            ┃            ┃            ┃            ┃            ┃            ┃
+    ┃  &kp CAPS  ┃ {ctl_n(1)} ┃ {ctl_n(2)} ┃ {ctl_n(3)} ┃            ┃            ┃┃            ┃            ┃            ┃            ┃            ┃            ┃
     ┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫
     ┃            ┃            ┃            ┃            ┃            ┃            ┃┃            ┃            ┃            ┃            ┃            ┃            ┃
     ┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫
@@ -80,7 +83,7 @@ layers = {
         "pound_define": "NBC",
         "bindings": f"""
     ┏━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓┏━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
-    ┃ CAPS       ┃ &kp EXCL   ┃ &kp AT     ┃ &kp HASH   ┃ &kp DLLR   ┃ &kp PRCNT  ┃┃ &kp CARET  ┃ &kp AMPS   ┃ {MULTIPLY} ┃ &kp LPAR   ┃ &kp RPAR   ┃ &kp BSPC   ┃
+    ┃ &kp CAPS   ┃ &kp EXCL   ┃ &kp AT     ┃ &kp HASH   ┃ &kp DLLR   ┃ &kp PRCNT  ┃┃ &kp CARET  ┃ &kp AMPS   ┃ {MULTIPLY} ┃ &kp LPAR   ┃ &kp RPAR   ┃ &kp BSPC   ┃
     ┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫
     ┃            ┃ {num(1)}   ┃ {num(2)}   ┃ {num(3)}   ┃ {num(4)}   ┃ {num(5)}   ┃┃ &kp MINUS  ┃ &kp EQUAL  ┃ &kp BSLH   ┃ &kp LBKT   ┃ &kp RBKT   ┃ &kp GRAVE  ┃
     ┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫
@@ -138,10 +141,12 @@ layers = {
     },
 }
 
+
 def parse_layer_bindings(bindings):
     return "\n            ".join([line for i, line in enumerate(
                 bindings.replace("┃            ", "  &trans     ").split("\n")
             ) if i in [2, 4, 6, 9]]).replace("┃", " ")
+
 
 def parse_layer(name, bindings):
     return f"""
@@ -150,6 +155,7 @@ def parse_layer(name, bindings):
             {parse_layer_bindings(bindings)}
             >;
         }};"""
+
 
 def get_layout():
     output = ''
@@ -176,6 +182,7 @@ def get_layout():
     }};
 }};
     """
+
 
 print("generating layout...")
 with open("./config/corne.keymap", "w") as f:
