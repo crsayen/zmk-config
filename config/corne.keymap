@@ -30,7 +30,7 @@
                   &trans       &kp LC(NUMBER_1)   &kp LC(NUMBER_2)   &kp LC(NUMBER_3)   &trans       &trans        &trans       &trans       &trans       &trans       &trans       &trans      
                   &trans       &trans       &trans       &trans       &trans       &trans        &trans       &trans       &trans       &trans       &trans       &trans      
                   &trans       &trans       &trans       &trans       &trans       &trans        &trans       &trans       &trans       &trans       &trans       &trans      
-                                                         &kp LC(LEFT)    &kp LC(RIGHT)   CAPS          &trans       &trans       &trans      
+                                                         &kp LC(LEFT)    &kp LC(RIGHT)   &trans        &trans       &trans       &trans      
             >;
         };
         winmask_layer {
