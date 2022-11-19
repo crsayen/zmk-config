@@ -181,15 +181,13 @@ def get_layout():
         compatible = "zmk,combos";
         combo_ret {{
             timeout-ms = <50>;
-            key-positions = <18 19>;
+            key-positions = <20 21>;
             bindings = <&kp RETURN>;
-            layers = <-1>;
         }};
         combo_rsh {{
             timeout-ms = <50>;
-            key-positions = <28 29>;
+            key-positions = <31 32>;
             bindings = <&kp RSHFT>;
-            layers = <-1>;
         }};
     }};
 }};
