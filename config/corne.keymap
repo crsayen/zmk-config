@@ -19,16 +19,13 @@
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp RETURN>;
-        };
-        combo_backspace {
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&kp BACKSPACE>;
+            layers = <-1>;
         };
         combo_rsh {
             timeout-ms = <50>;
             key-positions = <28 29>;
             bindings = <&kp RSHFT>;
+            layers = <-1>;
         };
     };
 };
