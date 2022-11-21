@@ -197,12 +197,12 @@ def get_layout():
         combo_backtick {{
             timeout-ms = <50>;
             key-positions = <31 32 33>;
-            bindings = <&kp RSHFT>;
+            bindings = <&kp GRAVE>;
         }};
         combo_dquote {{
             timeout-ms = <50>;
             key-positions = <7 8 9>;
-            bindings = <&kp RSHFT>;
+            bindings = <&kp DQT>;
         }};
     }};
 }};
