@@ -10,7 +10,6 @@ manifest:
     #   revision: main
     - name: zmk-zephyr
       remote: infused-kim
-      revision: v2.5.0+zmk-fixes+kim-fixes
-      import: app/west.yml
+      revision: my-changes/oled-ext-pwr
   self:
     path: config
