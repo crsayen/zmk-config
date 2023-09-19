@@ -28,12 +28,9 @@ MULTIPLY = "&kp KP_MULTIPLY"
 SHZ = "&mt LSHFT Z"
 ESCTL = "&mt LCTRL ESC"
 
-
 def num(n): return f"&kp NUMBER_{n}"
 
-
 def ctl_n(num): return f"&kp LC(NUMBER_{num})"
-
 
 layers = {
     "default_layer": {
